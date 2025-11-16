@@ -3,19 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 conference website</title>
+    <title>Register for TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a CSS file -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>TechCon 2024 conference</h1>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="/about.html">About</a>
-        <a href="/schedule.html">Schedule</a>
-        <a href="/register.html">Register</a>
-        <a href="/contact.html">Contact</a>
-    </nav>
-    
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Attendee Registration</h2>
+            <form action="submit_registration.html" method="post">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">terms and conditions</a>.</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Register Now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TechCon. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
